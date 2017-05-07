@@ -81,7 +81,7 @@ uint8_t VEML6040_setConfiguration(uint8_t varConfig)
     uint8_t ErrorCode;
     // start reading
     ErrorCode = I2CM_MasterSendStart(VEML6040_I2C_ADDRESS, I2C_Write);
-    if (ErrorCode == I2CM_MSTR_NO_ERROR){
+    if (ErrorCode == I2CM_MSTR_NO_ERROR){ // if no error in transmission then go on
         // send command code + config
         I2CM_MasterWriteByte(COMMAND_CODE_CONF);
         I2CM_MasterWriteByte(varConfig);
@@ -92,7 +92,7 @@ uint8_t VEML6040_setConfiguration(uint8_t varConfig)
         // everything fine, return
         return Error_Code_No_Error;
     }
-    else
+    else // abort and return error code
     {
         I2CM_MasterSendStop();
         // else return with error

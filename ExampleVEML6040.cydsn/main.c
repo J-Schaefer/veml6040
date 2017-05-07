@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+
 #include "project.h"
 #include "veml6040.h"
 
@@ -36,23 +37,37 @@ int main(void)
     I2CM_Start();
     
     // show start message
-    
     LCD_Position(0,0);
     LCD_PrintString("PSOC 5LP example");
     LCD_Position(1,0);
     LCD_PrintString("for VEML6040");
     CyDelay(1000);
     
+    // check if sensor responds
     uint8_t ErrorCode = VEML6040_checkSensor();
-    // if no error then do nothing, otherwise show message
-    if (ErrorCode == Error_Code_Error){
+    // if error show message and wait for sensor
+    if (ErrorCode == Error_Code_Error)
+    {
         LCD_ClearDisplay();
         LCD_Position(0,0);
-        LCD_PrintString("Error detected");
+        LCD_PrintString("Error detected.");
         LCD_Position(1,0);
         LCD_PrintString("Check sensor.");
+    }
+    // wait for sensor
+    while (ErrorCode == Error_Code_Error)
+    {
+        ErrorCode = VEML6040_checkSensor();
         CyDelay(1000);
     }
+    
+    // show message that sensor is okay
+    LCD_ClearDisplay();
+    LCD_Position(0,0);
+    LCD_PrintString("Sensor okay.");
+    LCD_Position(1,0);
+    LCD_PrintString("proceeding.");
+    CyDelay(1000);
     
     LCD_ClearDisplay();
     LCD_Position(0,0);
@@ -67,7 +82,7 @@ int main(void)
     
     LCD_ClearDisplay();
     LCD_Position(0,0);
-    LCD_PrintString("Start");
+    LCD_PrintString("Everything done.");
     CyDelay(1000);
     
     for(;;)
@@ -78,24 +93,22 @@ int main(void)
         Blue = VEML6040_getBlue();
         
         LCD_ClearDisplay();
-        
         // print red value
         LCD_Position(0,0);
         LCD_PrintString("R");
         LCD_Position(1,0);
         LCD_PrintNumber(Red);
-        
         // print green value
         LCD_Position(0,5);
         LCD_PrintString("G");
         LCD_Position(1,5);
         LCD_PrintNumber(Green);
-        
         // print blue value
         LCD_Position(0,10);
         LCD_PrintString("B");
         LCD_Position(1,10);
         LCD_PrintNumber(Blue);
+        
         CyDelay(1000);
     }
     
