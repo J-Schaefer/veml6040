@@ -1,0 +1,13 @@
+.DS_Store
+*.cywrk.*
+*.cyprj.*
+*.cyfit
+*.uvopt
+*.uvproj
+*_timing.html
+*.cydsn/codegentemp
+*.cydsn/DP8051
+*.cydsn/CortexM3
+*.cydsn/Export
+*.cydsn/Generated_Source/PSoC5/*
+!.cydsn/Generated_Source/PSOC5/*.hex
