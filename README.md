@@ -7,6 +7,8 @@ This example program is written with PSOC Creator. The hardware used is:
 - VEML6040: RGBW color sensor with I2C interface
 - standard LCD
 
+Warning: Be careful, when you program the PSOC. Always disconnect the PSOC from the sensor while programming. The sensor can only stand up to 3.6 V, so the 5 V from the USB connection could kill it.
+
 ## How to use
 
 You can copy only the files **veml6040.h** and **veml6040.c** into your project to use the sensor. The I2C element in TopDesign is named **ICM**.
