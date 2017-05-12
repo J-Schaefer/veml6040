@@ -92,5 +92,6 @@ uint16_t VEML6040_getBlue(); // receive blue value
 uint16_t VEML6040_getWhite(); // receive white (unfiltered) value
 uint16_t VEML6040_getCCT(); // receive correlated color temperature value
 float VEML6040_getAmbientLight(); // receive ambient light value
+void VEML6040_startMeasurement(void); // trigger a single measurement when in force mode
 
 #endif

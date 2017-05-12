@@ -45,7 +45,7 @@ int main(void)
     
     // check if sensor responds
     uint8_t ErrorCode = VEML6040_checkSensor();
-    // if error show message and wait for sensor
+    // if error, then show message and wait for sensor
     if (ErrorCode == Error_Code_Error)
     {
         LCD_ClearDisplay();
@@ -57,6 +57,7 @@ int main(void)
     // wait for sensor
     while (ErrorCode == Error_Code_Error)
     {
+        // repeatedly check if sensor is responding now
         ErrorCode = VEML6040_checkSensor();
         CyDelay(1000);
     }
@@ -66,14 +67,14 @@ int main(void)
     LCD_Position(0,0);
     LCD_PrintString("Sensor okay.");
     LCD_Position(1,0);
-    LCD_PrintString("proceeding.");
+    LCD_PrintString("Proceeding.");
     CyDelay(1000);
     
     LCD_ClearDisplay();
     LCD_Position(0,0);
     LCD_PrintString("Configuring.");
     LCD_Position(1,0);
-    LCD_PrintString("please wait.");
+    LCD_PrintString("Please wait.");
     CyDelay(1000);
 
     // configure sensor

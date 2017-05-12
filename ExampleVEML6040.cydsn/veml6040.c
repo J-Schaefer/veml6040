@@ -269,6 +269,7 @@ uint16_t VEML6040_getCCT()
     green = VEML6040_getGreen();
     blue = VEML6040_getBlue();
     
+    // formula in data sheet/application note
     ccti = ((float)red - (float)blue) / (float)green;
     ccti = ccti + offset; 
     cct = 4278.6 * pow(ccti,-1.2455);
@@ -325,11 +326,8 @@ float VEML6040_getAmbientLight()
 *
 *******************************************************************************/
 
-void startMeasurement(void){
+void VEML6040_startMeasurement(void){
     // trigger a measurement when in force mode
-    if (lastConfiguration ^ VEML6040_AF_FORCE) // if in force mode
-    {
-        VEML6040_setConfiguration(lastConfiguration | VEML6040_TRIG_ENABLE); // take last config and add trigger
-        CyDelay(800);
-    }
+    VEML6040_setConfiguration(lastConfiguration | VEML6040_TRIG_ENABLE); // take last config and add trigger (OR Operation)
+    CyDelay(800);
 }
