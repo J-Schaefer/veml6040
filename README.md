@@ -2,10 +2,10 @@
 Library for RGBW color sensor on PSOC 5LP
 
 ## General stuff
-This example program is written with PSOC Creator. The hardware used is:
+This example program is written with PSOC Creator 4.1. The hardware used is:
 - CY8CKIT-059 PSOC 5LP Prototyping Kit
 - VEML6040: RGBW color sensor with I2C interface
-- standard LCD
+- standard LCD display
 
 Warning: Be careful, when you program the PSOC. Always disconnect the PSOC from the sensor while programming. The sensor can only stand up to 3.6 V, so the 5 V from the USB connection could kill it.
 
