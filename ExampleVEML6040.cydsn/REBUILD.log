@@ -1,0 +1,80 @@
+--------------- Rebuild Started: 07/03/2019 02:19:58 Project: ExampleVEML6040, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\main.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\veml6040.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\cymetadata.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\LCD.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\LCD_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\PinSDA.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\I2CM.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\I2CM_BOOT.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\I2CM_INT.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\I2CM_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\I2CM_SLAVE.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\I2CM_MASTER.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\PinSCL.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\LCD_LCDPort.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\CyDmac.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\CyFlash.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\CyLib.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\cyPm.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\CySpc.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\cyutils.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.hex"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.elf"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.map"
+Deleting file ".\ExampleVEML6040.cycdx"
+Deleting file ".\ExampleVEML6040.svd"
+Deleting file ".\ExampleVEML6040.rpt"
+Deleting file ".\ExampleVEML6040_timing.html"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\.deps\SOURCE_ASM__ARM_GCC_GENERIC.P"
+cydsfit.exe -.appdatapath "C:\Users\Jeroen\AppData\Local\Cypress Semiconductor\PSoC Creator\4.1" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Jeroen\Documents\git\VEML6040\ExampleVEML6040.cydsn\ExampleVEML6040.cyprj -d CY8C5888LTI-LP097 -s C:\Users\Jeroen\Documents\git\VEML6040\ExampleVEML6040.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation...
+Synthesis...
+Tech Mapping...
+Analog Placement...
+Analog Routing...
+Analog Code Generation...
+Digital Placement...
+Digital Routing...
+Bitstream Generation...
+Bitstream Verification...
+Static timing analysis...
+API Generation...
+Dependency Generation...
+Cleanup...
+arm-none-eabi-gcc.exe -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c veml6040.c -o .\CortexM3\ARM_GCC_541\Debug\veml6040.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/veml6040.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\cyfitter_cfg.c -o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/cyfitter_cfg.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\cymetadata.c -o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/cymetadata.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\LCD.c -o .\CortexM3\ARM_GCC_541\Debug\LCD.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/LCD.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\LCD_PM.c -o .\CortexM3\ARM_GCC_541\Debug\LCD_PM.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/LCD_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\PinSDA.c -o .\CortexM3\ARM_GCC_541\Debug\PinSDA.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/PinSDA.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\I2CM.c -o .\CortexM3\ARM_GCC_541\Debug\I2CM.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/I2CM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\I2CM_BOOT.c -o .\CortexM3\ARM_GCC_541\Debug\I2CM_BOOT.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/I2CM_BOOT.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\I2CM_INT.c -o .\CortexM3\ARM_GCC_541\Debug\I2CM_INT.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/I2CM_INT.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\I2CM_PM.c -o .\CortexM3\ARM_GCC_541\Debug\I2CM_PM.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/I2CM_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\I2CM_SLAVE.c -o .\CortexM3\ARM_GCC_541\Debug\I2CM_SLAVE.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/I2CM_SLAVE.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\I2CM_MASTER.c -o .\CortexM3\ARM_GCC_541\Debug\I2CM_MASTER.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/I2CM_MASTER.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\PinSCL.c -o .\CortexM3\ARM_GCC_541\Debug\PinSCL.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/PinSCL.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\LCD_LCDPort.c -o .\CortexM3\ARM_GCC_541\Debug\LCD_LCDPort.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/LCD_LCDPort.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\Cm3Start.c -o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/Cm3Start.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\CyDmac.c -o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CyDmac.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\CyFlash.c -o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CyFlash.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\CyLib.c -o .\CortexM3\ARM_GCC_541\Debug\CyLib.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CyLib.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\cyPm.c -o .\CortexM3\ARM_GCC_541\Debug\cyPm.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/cyPm.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\CySpc.c -o .\CortexM3\ARM_GCC_541\Debug\CySpc.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CySpc.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-gcc.exe -c Generated_Source\PSoC5\cyutils.c -o .\CortexM3\ARM_GCC_541\Debug\cyutils.o -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/cyutils.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og
+arm-none-eabi-as.exe -o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o Generated_Source\PSoC5\CyBootAsmGnu.s -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=.\CortexM3\ARM_GCC_541\Debug/CyBootAsmGnu.lst -g -W
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.a .\CortexM3\ARM_GCC_541\Debug\LCD.o .\CortexM3\ARM_GCC_541\Debug\LCD_PM.o .\CortexM3\ARM_GCC_541\Debug\PinSDA.o .\CortexM3\ARM_GCC_541\Debug\I2CM.o .\CortexM3\ARM_GCC_541\Debug\I2CM_BOOT.o .\CortexM3\ARM_GCC_541\Debug\I2CM_INT.o .\CortexM3\ARM_GCC_541\Debug\I2CM_PM.o .\CortexM3\ARM_GCC_541\Debug\I2CM_SLAVE.o .\CortexM3\ARM_GCC_541\Debug\I2CM_MASTER.o .\CortexM3\ARM_GCC_541\Debug\PinSCL.o .\CortexM3\ARM_GCC_541\Debug\LCD_LCDPort.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Users\Jeroen\Documents\git\VEML6040\ExampleVEML6040.cydsn\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.elf .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\veml6040.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.a "D:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/ExampleVEML6040.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+cyelftool.exe -C C:\Users\Jeroen\Documents\git\VEML6040\ExampleVEML6040.cydsn\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
+cyelftool.exe -S C:\Users\Jeroen\Documents\git\VEML6040\ExampleVEML6040.cydsn\CortexM3\ARM_GCC_541\Debug\ExampleVEML6040.elf
+Flash used: 4278 of 262144 bytes (1,6 %).
+SRAM used: 2553 of 65536 bytes (3,9 %). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Rebuild Succeeded: 07/03/2019 02:20:09 ---------------

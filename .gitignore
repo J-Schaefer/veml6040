@@ -1,10 +1,21 @@
 .DS_Store
+
+# User files
 *.cywrk.*
 *.cyprj.*
+
+# Miscellaneous files
 *.cyfit
 *.uvopt
 *.uvproj
 *_timing.html
+*.cycdx
+*.gsvd
+*.html
+*.pdf
+*.rpt
+*/ComponentUpdateLog.txt
+
 *.cydsn/codegentemp
 *.cydsn/DP8051
 *.cydsn/CortexM3
